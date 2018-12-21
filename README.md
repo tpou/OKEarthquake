@@ -6,6 +6,7 @@ This project studies the relationship between the earthquake’s frequency and m
 Supervised algorithms encompassing PLS, Ridge, LASSO and ElasticNet to investigate Oklahoma earthquake data (OGS source) and UIC Well Volume (OCCC source).
 ## Data Source
 [OGS](http://www.ou.edu/ogs/research/earthquakes/catalogs)
+
 [OCCC](http://www.occeweb.com/og/oghome.htm)
 
 ```R
@@ -26,4 +27,5 @@ library(MASS) #
 ##-------OKLAHOMA coord. loading...----------####
 okmap = fifty_states[fifty_states$id=="oklahoma",]
 okcounty = data.frame(lat=map("county","Oklahoma")$y,long=map("county","Oklahoma")$x)
+print(head(okcounty))
 ```
